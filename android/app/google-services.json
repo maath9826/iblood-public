@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "342148588639",
+    "project_id": "iblood-3643f",
+    "storage_bucket": "iblood-3643f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342148588639:android:1a5fe0354376c1586c27ea",
+        "android_client_info": {
+          "package_name": "com.example.iblood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342148588639-62m6ocl5h9ilksnkiprurcprvdnu311b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi-tBGzPQSQNNc06jTzn8zmH0jvab5Rwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342148588639-62m6ocl5h9ilksnkiprurcprvdnu311b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
