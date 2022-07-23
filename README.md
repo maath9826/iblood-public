@@ -2,6 +2,7 @@
 
 ## Intro
 Hi!
+
 iblood is a mobile application built with flutter framework. It has many features including:
 - Blood bank tab, which displays:
 	- Blood bank info.
@@ -23,12 +24,11 @@ iblood is a mobile application built with flutter framework. It has many feature
 
  1. Setting up your Firebase:
 	- Firestore:
-		- create two firestore databases, one for the iblood app and the other fore the bloodbank system, download the google-services.json files and put them in your project in "android/app/".
+		- create two firestore databases, one for the iblood app and the other fore the bloodbank system, download the google-services.json files and put them in your project in "android/app/".![google-services.json directory image](https://github.com/maath9826/iblood-public/blob/master/README-images/gs-dir.png?raw=true)
 
-![google-services.json directory image](https://github.com/maath9826/iblood-public/blob/master/README-images/gs-dir.png?raw=true)
+
 
 		- you need to make sure that the structure of the databases is as follows
  2. List item
  3. First, create two firebase firestore databases and  connect it to
 install the dependencies by running " flutter pub get"
-
