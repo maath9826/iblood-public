@@ -1,16 +1,34 @@
 # iblood
 
-A new Flutter project.
+## Intro
+Hi!
+iblood is a mobile application built with flutter framework. It has many features including:
+- Blood bank tab, which displays:
+	- Blood bank info.
+	- Available blood types.
+- Public donors tab, which displays the donors that accepted to be a public donors. The user can click on each donor card and see their contact info.
+- Private community tab, which displays the registered private communities, for example: universities or any other institutions. For now there is no admin dashboard so Institutions can only be created directly from the firebase firestore that are connected to the app. To be a member of any community you need to have a membership code which can be obtained from the community owner, if you are a community owner ( have an "editor" role ), you can add new members and copy the invitation code or "membership code" and send it to who ever you want ( notice that invitation code can be associated with one user only ). If you have a membership code you can enter to a community, which include:
+	-  Monitor the Donors and donation requests of the community.
+	- Add yourself as a donor inside this community.
+	- Add a donation request. When a donation request is added, all of the members will recieve a notification.
+	- See the statistics of the community
+- Account tab, where you can:
+	- Activate your account ( an activation code can only be obtained from the blood bank when you donate blood ).
+	- See your personal info ( need activation ).
+	- See your balance ( need activation ).
+	- See your donation archive ( need activation ).
+	- logout.
 
-## Getting Started
+## How To run
 
-This project is a starting point for a Flutter application.
+ 1. Setting up your Firebase:
+	- Firestore:
+		- create two firestore databases, one for the iblood app and the other fore the bloodbank system, download the google-services.json files and put them in your project in "android/app/".
 
-A few resources to get you started if this is your first Flutter project:
+![google-services.json directory image](https://github.com/maath9826/iblood-public/blob/master/README-images/gs-dir.png?raw=true)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+		- you need to make sure that the structure of the databases is as follows
+ 2. List item
+ 3. First, create two firebase firestore databases and  connect it to
+install the dependencies by running " flutter pub get"
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

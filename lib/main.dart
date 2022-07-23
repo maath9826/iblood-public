@@ -1,10 +1,7 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:iblood/main_tabs/account_tab/pages/archive_page/archive_page.dart';
 import 'package:iblood/main_tabs/blood_bank_donors_tab/pages/client_details_page.dart';
@@ -12,17 +9,12 @@ import 'package:iblood/main_tabs/blood_bank_donors_tab/pages/client_details_page
 import 'package:iblood/main_tabs/blood_banks_tab/pages/blood_bank_bags_page/blood_bank_page.dart';
 import 'package:iblood/main_tabs/account_tab/pages/profile_page/profile_page.dart';
 import 'package:iblood/main_tabs/private_tab/pages/private_community_page/tabs/members_tab/pages/add_member.dart';
-import 'package:iblood/others/helpers/routes_arguments.dart';
-import 'package:iblood/main_tabs/public_tab/public_communities_tab.dart';
 import 'package:iblood/pages/login_page.dart';
 import 'package:iblood/pages/phone_call_page.dart';
 import 'package:iblood/pages/signup_page.dart';
-import 'package:iblood/pages/splash_page.dart';
 import 'package:iblood/providers/auth_provider.dart';
-import 'package:iblood/providers/users_provider.dart';
 import 'package:iblood/services/local_push_notification_service.dart';
 import 'package:provider/provider.dart';
-import 'main_tabs/blood_banks_tab/blood_banks_tab.dart';
 import 'main_tabs/main_tabs.dart';
 import 'main_tabs/private_tab/pages/private_community_page/tabs/donation_requests_tab/pages/add_donation_request.dart';
 import 'main_tabs/private_tab/pages/private_community_page/pages/member_details_page/member_details_page.dart';
@@ -41,17 +33,12 @@ const AndroidNotificationChannel channel = AndroidNotificationChannel(
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 
-Future _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  await Firebase.initializeApp();
-  print('A bg message just showed up : ${message.messageId}');
-}
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   try {
     await Firebase.initializeApp(
-        name: 'BBSystem',
+        name: 'BBMS',
         options: const FirebaseOptions(
           appId: '1:50248671524:android:2fc748a9919b5995e893b1',
           apiKey: 'AIzaSyB4bx1Reat2ngB11wo__3WqwgMtWhihnZM',

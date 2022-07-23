@@ -6,7 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:iblood/blood_bank_system/models/client/client.dart';
 
 class ClientsProvider{
-  final _collectionRef = FirebaseFirestore.instanceFor(app: Firebase.app('BBSystem'))
+  final _collectionRef = FirebaseFirestore.instanceFor(app: Firebase.app('BBMS'))
       .collection('clients');
 
   Future<QueryDocumentSnapshot<Map<String, dynamic>>> getClientFromDonorCode({

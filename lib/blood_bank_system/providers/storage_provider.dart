@@ -8,11 +8,11 @@ import 'package:iblood/blood_bank_system/models/client/client.dart';
 
 class StorageProvider{
 
-  Stream<BloodWarehouse> getBlood() => FirebaseFirestore.instanceFor(app: Firebase.app('BBSystem'))
+  Stream<BloodWarehouse> getBlood() => FirebaseFirestore.instanceFor(app: Firebase.app('BBMS'))
         .collection('storage')
         .doc('blood').snapshots().map((snapshot) => BloodWarehouse.fromJson(snapshot.data()!));
 
-  Stream<Client?> getStream(String clientId) => FirebaseFirestore.instanceFor(app: Firebase.app('BBSystem'))
+  Stream<Client?> getStream(String clientId) => FirebaseFirestore.instanceFor(app: Firebase.app('BBMS'))
       .collection('clients')
       .doc(clientId)
       .snapshots().map((snapshot) => snapshot.data() == null ? null : Client.fromJson(snapshot.data()!));
