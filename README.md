@@ -1,7 +1,7 @@
 # iblood
 
 ## Intro
-Hi!
+Hi! 
 
 iblood is a mobile application built with flutter framework. It has many features including:
 - Blood bank tab, which displays:
@@ -28,7 +28,7 @@ iblood is a mobile application built with flutter framework. It has many feature
 
 
 
-		- you need to make sure that the structure of the databases is as follows
- 2. List item
- 3. First, create two firebase firestore databases and  connect it to
-install the dependencies by running " flutter pub get"
+		- make sure that the structure of the databases is as follows:![database structure image](https://github.com/maath9826/iblood-public/blob/master/README-images/all.png?raw=true)![database structure image](https://github.com/maath9826/iblood-public/blob/master/README-images/database3.1.png?raw=true)
+	- Authentication:
+		- make authentication with Email/Password.
+ 3. run "flutter pub get".
